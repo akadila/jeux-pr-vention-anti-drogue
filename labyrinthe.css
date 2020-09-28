@@ -18,15 +18,9 @@ body {
 }
 /*Background du tableau*/
 .board {
-<<<<<<< HEAD
     height: calc(20 * var(--block-size));
     width: calc(20 * var(--block-size));
-    background: #5fcde4;
-=======
-    height: calc(12 * var(--block-size));
-    width: calc(12 * var(--block-size));
     background: #842e1b;
->>>>>>> 844f502c174b9ecc526221038f3c3fe6f99b34d3
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(20, var(--block-size));
