@@ -10,21 +10,21 @@ body {
     left: 50%;
     margin-left: calc(-6 * var(--block-size));
     margin-top: calc(-7 * var(--block-size));
-    height: calc(14 * var(--block-size));
-    width: calc(12 * var(--block-size));
+    height: calc(20 * var(--block-size));
+    width: calc(20 * var(--block-size));
     position: absolute;
     display: grid;
-    grid-template-rows: var(--block-size) calc(12 * var(--block-size)) var(--block-size);
+    grid-template-rows: var(--block-size) calc(20 * var(--block-size)) var(--block-size);
 }
-
+/*Background du tableau*/
 .board {
-    height: calc(12 * var(--block-size));
-    width: calc(12 * var(--block-size));
+    height: calc(20 * var(--block-size));
+    width: calc(20 * var(--block-size));
     background: #5fcde4;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: repeat(12, var(--block-size));
-    grid-template-rows: repeat(12, var(--block-size))
+    grid-template-columns: repeat(20, var(--block-size));
+    grid-template-rows: repeat(20, var(--block-size));
 }
 
 .block {
@@ -32,7 +32,7 @@ body {
     height: var(--block-size);
     border-radius: 8px;
 }
-
+/*Espace vide*/
 .empty {
     background: #cbdbfc;
 }
