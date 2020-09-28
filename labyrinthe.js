@@ -15,13 +15,13 @@ let maze = [
     [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 3],
 ]
 
-let player = [0, 0]
-let bag = 0
+let player = [0, 0] //position joueur
+let bag = 0 //sac diamant
 
 const ROWS = 12
 const COLS = 12
 
-const EMPTY = 0
+const EMPTY = 0 //chemin praticable representer par 0 dans le tab
 const WALL = 1
 const PLAYER = 2
 const EXIT = 3
@@ -29,11 +29,12 @@ const EXIT_READY = 6
 const DIAMOND = 4
 const DIAMOND_COUNT = 12
 
+//code touche clavier
 const DOWN = 40
 const UP = 38
 const LEFT = 37
 const RIGHT = 39
-
+//lance les fonctions quand la page se charge
 window.onload = () => {
     generateDiamond()
     createBoard()
@@ -42,7 +43,7 @@ window.onload = () => {
 
 const generateDiamond = () => {
     let count = 0
-
+// si case vide && position diff de position départ && dans le tab
     do {
         let row = Math.floor(Math.random() * ROWS)
         let col = Math.floor(Math.random() * COLS)
