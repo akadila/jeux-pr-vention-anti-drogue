@@ -20,7 +20,7 @@ body {
 .board {
     height: calc(12 * var(--block-size));
     width: calc(12 * var(--block-size));
-    background: #5fcde4;
+    background: #842e1b;
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(12, var(--block-size));
