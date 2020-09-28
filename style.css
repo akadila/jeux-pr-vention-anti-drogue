@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+.weed{
+    background-image: url("weed.png");
+}
+.exta{
+    background-image: url("extasy.jpg");
+}
+.champi{
+    background-image: url("champignon.png");
+    }
+.coke{
+    background-image: url("coke.jpg");
+    }
+.keta{
+    background-image: url("keta.png");
+    }
+    /*
+.exta{
+    background-image: url("weed.png");
+    }
+    */
