@@ -48,7 +48,7 @@ body {
     
 }
 /*Class a rajouter dans le js */
-.extasy{
+.exta{
     background-image: url('extasy.jpg');
     background-size: 35px 35px;
     
@@ -58,6 +58,41 @@ body {
     background-size: 35px 35px;
     
 }
+
+.weed{
+    background-image: url("weed.png");
+    background-size: 35px 35px;
+
+}
+.champi{
+    background-image: url("champignon.png");
+    background-size: 35px 35px;
+
+}
+.coke{
+        background-image: url("coke.jpg");
+        background-size: 35px 35px;
+
+}
+.keta{
+    background-image: url("keta.png");
+    background-size: 35px 35px;
+    }
+.hero{
+    background-image: url("hero.jpg");
+    background-size: 35px 35px;
+}
+.life{
+    background-image: url("heart.jpg");
+    background-size: 35px 35px;
+    }
+.madi{
+    background-image: url("madi.png");
+    background-size: 35px 35px;
+            }
+
+
+    
 
 
 .exit {
