@@ -37,7 +37,8 @@ const EXIT = 3
 const EXIT_READY = 6
 const DIAMOND = 4
 const DIAMOND_COUNT = 12
-const DRUGE_COUNT = 12
+const HERO = 5 
+const HERO_COUNT = 12
 
 
 //code touche clavier
@@ -50,8 +51,9 @@ window.onload = () => {
     generateDiamond()
     createBoard()
     renderMaze()
+    generateHero()
 }
-
+//--------------------------------------------------------------------------------------------------------------------
 const generateDiamond = () => {
     let count = 0
 // si case vide && position diff de position départ && dans le tab
@@ -67,23 +69,23 @@ const generateDiamond = () => {
 
     } while (count !== DIAMOND_COUNT)
 }
-
+//-----------------------------------------------------------------------------------------------------------------------------
 const generateHero = () => {
-    let count = 0
+    let count_hero = 0
 // si case vide && position diff de position départ && dans le tab
     do {
         let row = Math.floor(Math.random() * ROWS)
         let col = Math.floor(Math.random() * COLS)
         if (maze[row][col] === EMPTY && 
             row !== 0 && col !==0 &&
-            row !== ROWS -1 && col !== COLS -1) {
-            maze[row][col] = DIAMOND
-            count++
+            row !== ROWS -1 && col !== COLS -1 ) {
+            maze[row][col] = HERO
+            count_hero++
         }
 
-    } while (count !== DIAMOND_COUNT)
+    } while (count_hero !== HERO_COUNT)
 }
-
+//--------------------------------------------------------------------------------------------------------------------------------
 const createBoard = () => {
     for (let row = 0; row < ROWS; row++) {
         for (let col = 0; col < COLS; col++) { 
@@ -93,9 +95,9 @@ const createBoard = () => {
         }
     }
 }
-
+//--------------------------------------------------------------------------------
 const renderMaze = () => {
-    if (bag < DIAMOND_COUNT) {
+    if (bag < DIAMOND_COUNT && bag < HERO_COUNT) {
         document.querySelector('.info').textContent = 'collect all the gems'
     } else {
         maze[ROWS-1][COLS-1] = EXIT_READY
@@ -118,6 +120,8 @@ const renderMaze = () => {
                 itemClass = 'exit show'; break
                 case DIAMOND:
                     itemClass = 'diamond'; break
+                case HERO:
+                        itemClass = 'hero'; break
                 default:
                     itemClass = 'empty'
             }

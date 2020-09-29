@@ -114,12 +114,12 @@ body {
     
 }
 
-.header .diamond {
+.header .diamond .hero {
     background-color: transparent;
     float: right;
 }
 
-.diamond-count,
+.diamond-count, .hero-count,
 .footer {
     color: #cbdbfc;
     line-height: 35px;
@@ -129,6 +129,10 @@ body {
 
 .diamond-count {
     float: right;
+}
+
+.hero-count {
+    float: left;
 }
 
 .footer {
